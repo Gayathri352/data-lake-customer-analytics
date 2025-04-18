@@ -1,22 +1,21 @@
-# 🧊 Data Lake Architecture for Customer Analytics (AWS)
+# Data Lake Architecture for Customer Analytics (AWS)
 
-This project demonstrates how to build a **scalable Data Lake architecture** on AWS for storing, processing, and analyzing large-scale customer transaction data.
-
----
-
-## 🚀 Features
-
-- Amazon S3 for raw and processed data storage
-- AWS Glue & PySpark for ETL transformation and schema enforcement
-- AWS Lambda to automate and trigger data pipelines
-- Amazon Redshift for warehousing and BI integration
-- Designed for **50GB+ structured & semi-structured data**
+This project demonstrates the implementation of a scalable Data Lake architecture using Amazon Web Services (AWS) to store, process, and analyze large-scale customer transaction data.
 
 ---
 
-## 🗂️ Folder Structure
+## Features
 
-```
+- Utilizes **Amazon S3** for storing raw and processed data
+- Implements **ETL pipelines** using **AWS Glue** and **PySpark** for data transformation and schema enforcement
+- Automates workflows with **AWS Lambda** to trigger ETL jobs
+- Uses **Amazon Redshift** for data warehousing and analytics
+- Designed to handle over **50GB of structured and semi-structured** customer transaction data
+
+---
+
+## Folder Structure
+
 data-lake-customer-analytics/
 ├── scripts/
 │   ├── etl_pipeline_glue.py     # Glue ETL script
@@ -27,43 +26,47 @@ data-lake-customer-analytics/
 └── requirements.txt            # Python dependencies
 ```
 
+
 ---
 
-## ⚙️ Technologies Used
+## Technologies Used
 
 - Python, PySpark
-- Amazon S3, AWS Glue, AWS Lambda
+- AWS S3, AWS Glue, AWS Lambda
 - Amazon Redshift
-- JSON, SQL
+- SQL, JSON
 
 ---
 
-## 📈 Outcome
+## Project Outcome
 
-- Enabled real-time analytics using AWS services
+- Enabled real-time analytics on customer data using AWS services
 - Reduced query latency by **35%**
-- Processed and structured **50GB+** of raw customer data
+- Successfully processed and structured over **50GB of raw data** for business insights
 
 ---
 
-## 📷 Architecture Diagram
+## Architecture Diagram
 
-> *(You can add an image here — `architecture_diagram.png`)*
-
----
-
-## 🏁 How to Run (Locally Simulated)
-
-1. Place your sample transaction data in the `/data` folder
-2. Modify the Glue script paths and run with `boto3` or AWS Console
-3. Simulate Lambda trigger via `lambda_trigger.py`
-4. Run `redshift_load.sql` to load data (if Redshift access configured)
+*You may upload and embed a system architecture diagram here using `architecture_diagram.png`.*
 
 ---
 
-## 📩 Contact
+## How to Run (Local Simulation)
+
+> Note: This project was designed for deployment in AWS but can be simulated locally for demonstration purposes.
+
+1. Place sample CSV data in the `/data` folder
+2. Run the ETL script (`scripts/etl_pipeline_glue.py`) using a local PySpark environment or simulate via Google Colab
+3. Trigger the Lambda script (`scripts/lambda_trigger.py`) to simulate automation
+4. Use `redshift_load.sql` to load the data into Redshift or a compatible SQL environment
+
+---
+
+## Author
 
 **Sai Gayathri Makineni**  
-Graduate Student, Computer Science – University of North Texas  
-📧 [your email]  
-🌐 [LinkedIn link]
+Graduate Student – M.S. Computer Science  
+University of North Texas  
+Email: saigayathri18@gmail.com  
+LinkedIn: https://www.linkedin.com/in/sai-gayathri-makineni/
