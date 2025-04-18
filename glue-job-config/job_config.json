@@ -1,0 +1,13 @@
+{
+  "Name": "customer-analytics-etl-job",
+  "Role": "AWSGlueServiceRoleDefault",
+  "Command": {
+    "Name": "glueetl",
+    "ScriptLocation": "s3://your-bucket/scripts/etl_pipeline_glue.py"
+  },
+  "MaxRetries": 0,
+  "Timeout": 60,
+  "GlueVersion": "2.0",
+  "NumberOfWorkers": 10,
+  "WorkerType": "Standard"
+}
