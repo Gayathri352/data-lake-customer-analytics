@@ -24,7 +24,6 @@ data-lake-customer-analytics/
 ├── data/                        # Sample CSV data
 ├── glue-job-config/            # Job parameters
 └── requirements.txt            # Python dependencies
-```
 
 ## Technologies Used
 
