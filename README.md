@@ -26,9 +26,6 @@ data-lake-customer-analytics/
 └── requirements.txt            # Python dependencies
 ```
 
-
----
-
 ## Technologies Used
 
 - Python, PySpark
@@ -46,15 +43,9 @@ data-lake-customer-analytics/
 
 ---
 
-## Architecture Diagram
-
-*You may upload and embed a system architecture diagram here using `architecture_diagram.png`.*
-
----
-
 ## How to Run (Local Simulation)
 
-> Note: This project was designed for deployment in AWS but can be simulated locally for demonstration purposes.
+> Note: This project was designed for deployment in AWS but can be simulated locally in google colab for demonstration purposes.
 
 1. Place sample CSV data in the `/data` folder
 2. Run the ETL script (`scripts/etl_pipeline_glue.py`) using a local PySpark environment or simulate via Google Colab
